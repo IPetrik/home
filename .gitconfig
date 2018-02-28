@@ -1,0 +1,19 @@
+[user]
+	name = Igor Petrik
+	email = ipetrik@ambrygen.com
+[core]
+	editor = vim
+	pager = 
+[merge]
+	tool = vimdiff
+[log]
+  date = short
+[alias]
+    #gr = "!git log --graph --full-history --all --color --pretty=tformat:'%C(magenta)%h (%C(blue)%an%x20-%x20%ad%C(reset))%x20%C(yellow)%d%C(reset)%x20%s%x20%C(reset)' | gr_invert"
+    gr = "!git log --graph --full-history --all --color --pretty=tformat:'%C(auto,red)%h%C(auto,green)%>(12,trunc)%ad %C(auto,blue)%<(16,trunc)%aN%C(auto,reset)%s\n%C(auto,yellow)%gD%d%C(auto,reset)' | gr_invert"
+    #gr-all = "!git log --graph --full-history --all --reflog --color --pretty=tformat:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an%x20-%x20%ai)%x1b[0m' | gr_invert"
+    gr-all = "!git log --graph --full-history --all --reflog --color --pretty=tformat:'%C(auto,red)%h%C(auto,green)%>(12,trunc)%ad %C(auto,blue)%<(16,trunc)%aN%C(auto,reset)%s\n%C(auto,yellow)%gD%d%C(auto,reset)' | gr_invert"
+    expire = "reflog expire --expire=now --all"
+[http]
+	sslCAInfo = /home/ipetrik/local_ssl.pem
+#	sslVerify = false

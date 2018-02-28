@@ -1,0 +1,9 @@
+$include /etc/inputrc
+set editing-mode vi
+set keymap vi-command
+set colored-stats On
+set completion-ignore-case On
+set completion-prefix-display-length 3
+set mark-symlinked-directories On
+set show-mode-in-prompt on
+set show-all-if-ambiguous on
